@@ -115,7 +115,7 @@ template='
 	{{- "\n" -}}
 	{{- range $.Entries -}}
 		{{- $arch := .HasArchitecture arch | ternary arch (.Architectures | first) -}}
-		{{- $from := $.ArchDockerFrom $arch . -}}
+		{{- $froms := $.ArchDockerFroms $arch . -}}
 		{{- $outDir := join "_" $.RepoName (.Tags | last) -}}
 		git -C "$BASHBREW_CACHE/git" archive --format=tar
 		{{- " " -}}
@@ -174,6 +174,7 @@ copy-tar() {
 			' "$d")
 
 			# some extra files which are likely interesting if they exist, but no big loss if they do not
+			' .dockerignore' # will be used automatically by "docker build"
 			' *.manifest' # debian/ubuntu "package versions" list
 			' *.ks' # fedora "kickstart" (rootfs build script)
 			' build*.txt' # ubuntu "build-info.txt", debian "build-command.txt"
@@ -196,7 +197,9 @@ copy-tar() {
 
 			local globbed
 			# "find: warning: -path ./xxx/ will not match anything because it ends with /."
-			globbed=( $(cd "$dDir" && find -path "./${f%/}") )
+			local findGlobbedPath="${f%/}"
+			findGlobbedPath="${findGlobbedPath#./}"
+			globbed=( $(cd "$dDir" && find -path "./$findGlobbedPath") )
 			if [ "${#globbed[@]}" -eq 0 ]; then
 				globbed=( "$f" )
 			fi
@@ -257,10 +260,12 @@ rm -rf tar
 git -C temp add .
 
 git -C temp diff \
-	--minimal \
-	--ignore-all-space \
-	--find-renames="$findCopies" \
-	--find-copies="$findCopies" \
 	--find-copies-harder \
+	--find-copies="$findCopies" \
+	--find-renames="$findCopies" \
+	--ignore-blank-lines \
+	--ignore-space-at-eol \
+	--ignore-space-change \
 	--irreversible-delete \
+	--minimal \
 	--staged

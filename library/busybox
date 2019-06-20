@@ -1,48 +1,48 @@
-# this file is generated via https://github.com/docker-library/busybox/blob/80983244a361f41572d23a85fb8376c3c89083fb/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/busybox/blob/1554579b4eb9ff41a5718b43824cf27e6f4893ca/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit),
              Jérôme Petazzoni <jerome.petazzoni@gmail.com> (@jpetazzo)
 GitRepo: https://github.com/docker-library/busybox.git
-GitCommit: 80983244a361f41572d23a85fb8376c3c89083fb
+GitCommit: 1554579b4eb9ff41a5718b43824cf27e6f4893ca
 # https://github.com/docker-library/busybox/tree/dist-amd64
 amd64-GitFetch: refs/heads/dist-amd64
-amd64-GitCommit: 04a10fb9f74112630b491ee8abf2a4fed09119a2
+amd64-GitCommit: 277ab500284846f49fa131a3a945587c68bf1f40
 # https://github.com/docker-library/busybox/tree/dist-arm32v5
 arm32v5-GitFetch: refs/heads/dist-arm32v5
-arm32v5-GitCommit: 7f4d843405970f9561589842e7ef3d484364782e
+arm32v5-GitCommit: 2c2788a770ced2d5f392963d2536ef787f5ef28e
 # https://github.com/docker-library/busybox/tree/dist-arm32v6
 arm32v6-GitFetch: refs/heads/dist-arm32v6
-arm32v6-GitCommit: cbdd3089868ee8949b363bd9d3610c34e00f945d
+arm32v6-GitCommit: 7056acea2f59d2c83d20a2fddc7aab9d7d94184c
 # https://github.com/docker-library/busybox/tree/dist-arm32v7
 arm32v7-GitFetch: refs/heads/dist-arm32v7
-arm32v7-GitCommit: ac4106b2531ce2aa2f37cff79eb8b4afc80ead56
+arm32v7-GitCommit: 9127bbb8e18aaf071bd5c42b4551c49c8c9f177e
 # https://github.com/docker-library/busybox/tree/dist-arm64v8
 arm64v8-GitFetch: refs/heads/dist-arm64v8
-arm64v8-GitCommit: 225ed72e5e025a2aa6386275656ad230d280f6d0
+arm64v8-GitCommit: a45451404d786c2d7a70fc76c9459c3ccd482fb1
 # https://github.com/docker-library/busybox/tree/dist-i386
 i386-GitFetch: refs/heads/dist-i386
-i386-GitCommit: 0a040f85007f484f3a2a9e74a1d0805125e84bdc
+i386-GitCommit: 843b63dd5df5cc8ddeeb25fae8df56d8d937501a
 # https://github.com/docker-library/busybox/tree/dist-ppc64le
 ppc64le-GitFetch: refs/heads/dist-ppc64le
-ppc64le-GitCommit: b600bacdc273325f99b8170dfd65b10faba02260
+ppc64le-GitCommit: b285477061e6605f778e0e133c68798403a2c7d9
 # https://github.com/docker-library/busybox/tree/dist-s390x
 s390x-GitFetch: refs/heads/dist-s390x
-s390x-GitCommit: d7fad7fbd640f809ce55de0897837277a7bcd3a3
+s390x-GitCommit: 349bd9a603cc879edaf00c24b2a692e64d797ab2
 
-Tags: 1.30.1-uclibc, 1.30-uclibc, 1-uclibc, uclibc
+Tags: 1.31.0-uclibc, 1.31-uclibc, 1-uclibc, uclibc
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386
 Directory: uclibc
 
-Tags: 1.30.1-glibc, 1.30-glibc, 1-glibc, glibc
+Tags: 1.31.0-glibc, 1.31-glibc, 1-glibc, glibc
 Architectures: amd64, arm32v5, arm32v7, arm64v8, i386, ppc64le, s390x
 Directory: glibc
 
-Tags: 1.30.1-musl, 1.30-musl, 1-musl, musl
+Tags: 1.31.0-musl, 1.31-musl, 1-musl, musl
 Architectures: amd64, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
 Directory: musl
 
-Tags: 1.30.1, 1.30, 1, latest
+Tags: 1.31.0, 1.31, 1, latest
 Architectures: amd64, arm32v5, arm32v6, arm32v7, arm64v8, i386, ppc64le, s390x
 amd64-Directory: uclibc
 arm32v5-Directory: uclibc

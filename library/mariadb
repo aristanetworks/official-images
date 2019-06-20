@@ -1,35 +1,25 @@
-# this file is generated via https://github.com/docker-library/mariadb/blob/b5689dcb9e0f411ed05070a9ce96ad1768f48825/generate-stackbrew-library.sh
+# this file is generated via https://github.com/docker-library/mariadb/blob/c969655b3c92a1ae3f066e506ab7b32ff4ba4582/generate-stackbrew-library.sh
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/mariadb.git
 
-Tags: 10.4.3-bionic, 10.4-bionic, rc-bionic, 10.4.3, 10.4, rc
+Tags: 10.4.6-bionic, 10.4-bionic, 10-bionic, bionic, 10.4.6, 10.4, 10, latest
 Architectures: amd64, arm64v8, ppc64le
-GitCommit: 93f1e9c9082364522c77b94e98299d7d398089f8
+GitCommit: ee9cf3e922a2e2b4218c38993aace07192402eda
 Directory: 10.4
 
-Tags: 10.3.14-bionic, 10.3-bionic, 10-bionic, bionic, 10.3.14, 10.3, 10, latest
+Tags: 10.3.16-bionic, 10.3-bionic, 10.3.16, 10.3
 Architectures: amd64, arm64v8, ppc64le
-GitCommit: 32aca58b13ee20d6514587e1a57ec9a0632fbe1d
+GitCommit: 5b833d3bb53298adea162c555f066233f74ff236
 Directory: 10.3
 
-Tags: 10.2.23-bionic, 10.2-bionic, 10.2.23, 10.2
+Tags: 10.2.25-bionic, 10.2-bionic, 10.2.25, 10.2
 Architectures: amd64, arm64v8, ppc64le
-GitCommit: fa087985605ca508ac661a52164db8c292c9f779
+GitCommit: f2ecbc37bcca1c61a2154dd8c677fb17504d443c
 Directory: 10.2
 
-Tags: 10.1.38-bionic, 10.1-bionic, 10.1.38, 10.1
+Tags: 10.1.40-bionic, 10.1-bionic, 10.1.40, 10.1
 Architectures: amd64, arm64v8, ppc64le
-GitCommit: 93f1e9c9082364522c77b94e98299d7d398089f8
+GitCommit: c969655b3c92a1ae3f066e506ab7b32ff4ba4582
 Directory: 10.1
-
-Tags: 10.0.38-xenial, 10.0-xenial, 10.0.38, 10.0
-Architectures: amd64, arm64v8, i386, ppc64le
-GitCommit: 93f1e9c9082364522c77b94e98299d7d398089f8
-Directory: 10.0
-
-Tags: 5.5.63-trusty, 5.5-trusty, 5-trusty, 5.5.63, 5.5, 5
-Architectures: amd64, i386, ppc64le
-GitCommit: 93f1e9c9082364522c77b94e98299d7d398089f8
-Directory: 5.5

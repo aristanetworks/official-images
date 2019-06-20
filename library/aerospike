@@ -1,18 +1,17 @@
 Maintainers: Lucien Volmar <lucien@aerospike.com> (@volmarl)
 
-Tags: 4.5.0.8, latest
+Tags: 4.5.3.3, latest
 Architectures: amd64
 GitRepo: https://github.com/aerospike/aerospike-server.docker.git
-GitCommit: 703a74c776c7f1712d7632bbde93f1ff7dee0119
+GitCommit: e11f2d17491c4fc1208512d0906b6af8094ec5e9
 
-Tags: 4.4.0.13
+Tags: 4.5.2.3
 Architectures: amd64
 GitRepo: https://github.com/aerospike/aerospike-server.docker.git
-GitCommit: 59992ed543a947aa6f0c12d5d941e01f22901caf
+GitCommit: c40b8ae85971f4ebb917c829c9fbe2529e52361d
 
-Tags: 4.3.1.12
+Tags: 4.5.1.8
 Architectures: amd64
 GitRepo: https://github.com/aerospike/aerospike-server.docker.git
-GitCommit: 3656a23aa221f46136c8c151486682241cc8b26b
-
+GitCommit: 02b044d6ab5c2a4fdd6049b7bd1ada5041379451
 

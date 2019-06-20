@@ -4,22 +4,22 @@ Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/ghost.git
 
-Tags: 2.19.2, 2.19, 2, latest
+Tags: 2.25.1, 2.25, 2, latest
 Architectures: amd64, arm32v7, arm64v8, ppc64le, s390x
-GitCommit: 0e392f3b363204c9c2bed3700ae8aab301d784c2
+GitCommit: 95a8ad331124acb5e5884e5391fed17297e710f9
 Directory: 2/debian
 
-Tags: 2.19.2-alpine, 2.19-alpine, 2-alpine, alpine
+Tags: 2.25.1-alpine, 2.25-alpine, 2-alpine, alpine
 Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: 0e392f3b363204c9c2bed3700ae8aab301d784c2
+GitCommit: 95a8ad331124acb5e5884e5391fed17297e710f9
 Directory: 2/alpine
 
-Tags: 1.25.7, 1.25, 1
+Tags: 1.25.8, 1.25, 1
 Architectures: amd64, arm32v7, arm64v8, i386, ppc64le, s390x
-GitCommit: c4b0064aa0ef96e7fea06bbbd41ab82722a7f80c
+GitCommit: 6580a99957b8c39cad68b4e497c626c470e9f7f1
 Directory: 1/debian
 
-Tags: 1.25.7-alpine, 1.25-alpine, 1-alpine
+Tags: 1.25.8-alpine, 1.25-alpine, 1-alpine
 Architectures: amd64, arm32v6, arm64v8, i386, ppc64le, s390x
-GitCommit: c4b0064aa0ef96e7fea06bbbd41ab82722a7f80c
+GitCommit: 6580a99957b8c39cad68b4e497c626c470e9f7f1
 Directory: 1/alpine

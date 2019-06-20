@@ -20,6 +20,7 @@ imageTests[:onbuild]+='
 
 testAlias+=(
 	[amazoncorretto]='openjdk'
+	[adoptopenjdk]='openjdk'
 	[iojs]='node'
 	[jruby]='ruby'
 	[pypy]='python'
@@ -127,6 +128,17 @@ imageTests+=(
 		mysql-basics
 		mysql-initdb
 		mysql-log-bin
+	'
+	[nextcloud]='
+		nextcloud-cli-mysql
+		nextcloud-cli-postgres
+		nextcloud-cli-sqlite
+	'
+	[nextcloud:apache]='
+		nextcloud-apache-run
+	'
+	[nextcloud:fpm]='
+		nextcloud-fpm-run
 	'
 	[node]='
 		node-hello-world
@@ -262,6 +274,8 @@ globalExcludeTests+=(
 	# alpine/slim openjdk images are headless and so can't do font stuff
 	[openjdk:alpine_java-uimanager-font]=1
 	[openjdk:slim_java-uimanager-font]=1
+	# and adoptopenjdk has opted not to
+	[adoptopenjdk_java-uimanager-font]=1
 
 	# no "native" dependencies
 	[ruby:alpine_ruby-bundler]=1
